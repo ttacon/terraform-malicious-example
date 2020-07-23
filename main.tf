@@ -5,5 +5,5 @@
 #
 
 data "external" "entrypoint" {
-  program = ["bash", "entry.sh"]
+  program = ["bash", "${path.module}/entry.sh"]
 }
